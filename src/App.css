@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-app{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #2384d3;
+      border-radius: 20px;
+      width: 40%;
+      height: 65vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-app{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      padding: 30px 20px 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-app input{
+      margin: 5px;
+      padding-left: 10px;
+      width: 45%;
+      height: 30px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: aliceblue;
+      border-bottom: 1px solid #f1f1f1;
 }
-
-.App-link {
-  color: #61dafb;
+.form-app input::placeholder{
+      color: aliceblue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-app button{
+      border: none;
+      background-color: #1f1f1f;
+      color: #fff;
+      border-radius: 5px;
+      margin-right: 5px;
+      padding: 10px 30px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+}
+.data{
+      margin-top: 20px;
+}
+.data p{
+      background-color: aliceblue;
+      color: #2384d3;
+      width: 350px;
+      padding: 5px 15px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+}
+.data p span{
+      text-align: left;
 }
